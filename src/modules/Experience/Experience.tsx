@@ -10,8 +10,8 @@ class Experience extends React.Component {
     render() {
         return (
             <SectionBox id={"experience"}>
-                <Container>
-                    <Stack ml="auto" mr="auto" direction={"column"} gap={2} maxWidth={"lg"}>
+                <Container maxWidth={"xl"}>
+                    <Stack ml="auto" mr="auto" direction={"column"} gap={2}>
                         <Typography variant="h3" mb={3}>
                             Experience
                         </Typography>
