@@ -28,7 +28,7 @@ class Header extends React.Component {
                             <HeaderLink to="home">Home</HeaderLink>
                         </HeaderGridItem>
                         <HeaderGridItem>
-                            <HeaderLink to="section1">About</HeaderLink>
+                            <HeaderLink to="experience">Experience</HeaderLink>
                         </HeaderGridItem>
                         <HeaderGridItem>
                             <Logo />

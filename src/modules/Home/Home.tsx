@@ -2,10 +2,7 @@ import React from "react";
 import FolderImage from "./FolderImage/FolderImage";
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import { Link as ScrollLink } from "react-scroll";
-
-const ScrollLinkBase = (props: any) => <ScrollLink spy smooth offset={-70} duration={500} {...props} />;
-
-const ScrollLinkButton = (props: any) => <Button component={ScrollLinkBase} {...props} />;
+import ScrollLinkButton from "../../general/ScrollLink";
 
 class Home extends React.Component {
     render() {
@@ -33,8 +30,12 @@ class Home extends React.Component {
                                 website as a portfolio to showcase some of the stuff I've worked on.
                             </Typography>
                             <Stack flexDirection={"row"} gap={1}>
-                                <ScrollLinkButton variant={"outlined"}>More About Me</ScrollLinkButton>
-                                <ScrollLinkButton variant={"outlined"}>My Projects</ScrollLinkButton>
+                                <ScrollLinkButton variant={"outlined"} to="experience">
+                                    More About Me
+                                </ScrollLinkButton>
+                                <ScrollLinkButton variant={"outlined"} to="experience">
+                                    My Projects
+                                </ScrollLinkButton>
                             </Stack>
                         </Stack>
                         <FolderImage />
