@@ -1,6 +1,7 @@
 import React from "react";
-import { AppBar, Button, Toolbar, Typography } from "@mui/material";
-import { Link as ScrollLink } from "react-scroll";
+import { AppBar, Button, Grid, Stack, Toolbar, Typography } from "@mui/material";
+import ScrollLinkButton from "../../general/ScrollLink";
+import Logo from "./Logo/Logo";
 
 const buttonStyle = {
     marginRight: 2,
@@ -10,32 +11,30 @@ const buttonStyle = {
     },
 };
 
-const ScrollLinkBase = (props: any) => <ScrollLink spy smooth offset={-70} duration={500} {...props} />;
-
-const ScrollLinkButton = (props: any) => <Button component={ScrollLinkBase} sx={buttonStyle} {...props} />;
-
 class Header extends React.Component {
     render() {
         return (
-            <AppBar
-                position="fixed"
-                sx={{
-                    backgroundColor: "#f5f5f5",
-                }}
-            >
-                <Toolbar>
-                    <Typography
-                        variant="h6"
-                        sx={{
-                            flexGrow: 1,
-                            color: "#333",
-                        }}
-                    >
-                        Your Website Name
-                    </Typography>
-                    <ScrollLinkButton to="section1">Section 1</ScrollLinkButton>
-                    <ScrollLinkButton to="section2">Section 2</ScrollLinkButton>
-                    <ScrollLinkButton to="section3">Section 3</ScrollLinkButton>
+            <AppBar position="fixed" color={"transparent"} sx={{ backgroundColor: "#FFF" }}>
+                <Toolbar sx={{ height: "var(--header-height)" }}>
+                    <Grid ml="auto" mr="auto" maxWidth={"md"} container spacing={2}>
+                        <Grid item xs={1} />
+                        <Grid item xs={2}>
+                            <ScrollLinkButton to="home">Home</ScrollLinkButton>
+                        </Grid>
+                        <Grid item xs={2}>
+                            <ScrollLinkButton to="section1">About</ScrollLinkButton>
+                        </Grid>
+                        <Grid item xs={2}>
+                            <Logo />
+                        </Grid>
+                        <Grid item xs={2}>
+                            <ScrollLinkButton to="section2">Projects</ScrollLinkButton>
+                        </Grid>
+                        <Grid item xs={2}>
+                            <ScrollLinkButton to="section3">Contact</ScrollLinkButton>
+                        </Grid>
+                        <Grid item xs={1} />
+                    </Grid>
                 </Toolbar>
             </AppBar>
         );
