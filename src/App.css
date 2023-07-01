@@ -80,3 +80,22 @@
     src: url(./assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf) format("truetype");
     font-style: italic;
 }
+
+.NoSelect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.NoDecoration {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.PointerCursor {
+    cursor: pointer;
+}

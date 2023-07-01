@@ -1,7 +1,9 @@
 import React from "react";
-import { AppBar, Button, Grid, Stack, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Button, Container, Stack, Toolbar, Typography } from "@mui/material";
+import Grid from "@mui/material/Unstable_Grid2";
 import ScrollLinkButton from "../../general/ScrollLink";
 import Logo from "./Logo/Logo";
+import HeaderLink from "./HeaderLink/HeaderLink";
 
 const buttonStyle = {
     marginRight: 2,
@@ -11,29 +13,33 @@ const buttonStyle = {
     },
 };
 
+const HeaderGridItem = (props: any) => (
+    <Grid xs={2} display={"flex"} justifyContent={"center"} alignContent={"center"} {...props} />
+);
+
 class Header extends React.Component {
     render() {
         return (
             <AppBar position="fixed" color={"transparent"} sx={{ backgroundColor: "#FFF" }}>
                 <Toolbar sx={{ height: "var(--header-height)" }}>
-                    <Grid ml="auto" mr="auto" maxWidth={"md"} container spacing={2}>
-                        <Grid item xs={1} />
-                        <Grid item xs={2}>
-                            <ScrollLinkButton to="home">Home</ScrollLinkButton>
-                        </Grid>
-                        <Grid item xs={2}>
-                            <ScrollLinkButton to="section1">About</ScrollLinkButton>
-                        </Grid>
-                        <Grid item xs={2}>
+                    <Grid container mr={"auto"} ml={"auto"} width={"100%"} maxWidth={"md"} spacing={2}>
+                        <Grid xs={1} />
+                        <HeaderGridItem>
+                            <HeaderLink to="home">Home</HeaderLink>
+                        </HeaderGridItem>
+                        <HeaderGridItem>
+                            <HeaderLink to="section1">About</HeaderLink>
+                        </HeaderGridItem>
+                        <HeaderGridItem>
                             <Logo />
-                        </Grid>
-                        <Grid item xs={2}>
-                            <ScrollLinkButton to="section2">Projects</ScrollLinkButton>
-                        </Grid>
-                        <Grid item xs={2}>
-                            <ScrollLinkButton to="section3">Contact</ScrollLinkButton>
-                        </Grid>
-                        <Grid item xs={1} />
+                        </HeaderGridItem>
+                        <HeaderGridItem>
+                            <HeaderLink to="section2">Projects</HeaderLink>
+                        </HeaderGridItem>
+                        <HeaderGridItem>
+                            <HeaderLink to="section3">Contact</HeaderLink>
+                        </HeaderGridItem>
+                        <Grid xs={1} />
                     </Grid>
                 </Toolbar>
             </AppBar>
