@@ -25,16 +25,16 @@ class Header extends React.Component {
                     <Grid container mr={"auto"} ml={"auto"} width={"100%"} maxWidth={"md"} spacing={2}>
                         <Grid xs={1} />
                         <HeaderGridItem>
-                            <HeaderLink to="home">Home</HeaderLink>
+                            <HeaderLink to="experience">Experience</HeaderLink>
                         </HeaderGridItem>
                         <HeaderGridItem>
-                            <HeaderLink to="experience">Experience</HeaderLink>
+                            <HeaderLink to="projects">Projects</HeaderLink>
                         </HeaderGridItem>
                         <HeaderGridItem>
                             <Logo />
                         </HeaderGridItem>
                         <HeaderGridItem>
-                            <HeaderLink to="projects">Projects</HeaderLink>
+                            <HeaderLink to="skills">Skills</HeaderLink>
                         </HeaderGridItem>
                         <HeaderGridItem>
                             <HeaderLink to="section3">Contact</HeaderLink>
