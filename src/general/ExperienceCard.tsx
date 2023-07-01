@@ -6,8 +6,8 @@ const SkillChip = (props: any) => <Chip variant="outlined" {...props} />;
 type Props = {
     children?: React.ReactNode;
     actionNodes?: React.ReactNode;
-    image: string;
-    imageTitle: string;
+    image?: string;
+    imageTitle?: string;
     skills: string[];
 };
 
@@ -19,7 +19,11 @@ class ExperienceCard extends React.Component<Props> {
     render() {
         return (
             <Card elevation={4} sx={{ display: "flex", flexDirection: "column", width: 380 }}>
-                <CardMedia sx={{ height: 150 }} image={this.props.image} title={this.props.imageTitle} />
+                {this.props.image != null ? (
+                    <CardMedia sx={{ height: 150 }} image={this.props.image} title={this.props.imageTitle} />
+                ) : (
+                    ""
+                )}
                 <CardContent sx={{ textAlign: "left", flexGrow: 1 }}>
                     {this.props.children}
                     <Stack direction={"row"} flexWrap={"wrap"} spacing={1} useFlexGap>

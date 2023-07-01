@@ -34,7 +34,7 @@ class Header extends React.Component {
                             <Logo />
                         </HeaderGridItem>
                         <HeaderGridItem>
-                            <HeaderLink to="section2">Projects</HeaderLink>
+                            <HeaderLink to="projects">Projects</HeaderLink>
                         </HeaderGridItem>
                         <HeaderGridItem>
                             <HeaderLink to="section3">Contact</HeaderLink>

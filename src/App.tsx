@@ -4,6 +4,7 @@ import Header from "./modules/Header/Header";
 import { Box, CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import Home from "./modules/Home/Home";
 import Experience from "./modules/Experience/Experience";
+import Projects from "./modules/Projects/Projects";
 
 const lightTheme = createTheme({
     palette: {
@@ -66,7 +67,7 @@ function App() {
                 <Header></Header>
                 <Home></Home>
                 <Experience></Experience>
-                <Box id="section1" sx={{ height: "150vh" }} />
+                <Projects></Projects>
                 <Box id="section2" sx={{ height: "150vh" }} />
                 <Box id="section3" sx={{ height: "150vh" }} />
             </ThemeProvider>

@@ -4,9 +4,7 @@ import KVHeadquartersImage from "./images/KVHeadquarters.jpg";
 import WPAFBImage from "./images/WPAFBImage.jpg";
 import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
 import SectionBox from "../../general/SectionBox";
-import ExperienceCard from "./ExperienceCard";
-
-const SkillChip = (props: any) => <Chip variant="outlined" {...props} />;
+import ExperienceCard from "../../general/ExperienceCard";
 
 class Experience extends React.Component {
     render() {
