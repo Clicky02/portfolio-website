@@ -20,7 +20,11 @@ class Experience extends React.Component {
                                 image={KVHeadquartersImage}
                                 imageTitle="Kinetic Vision's headquarter"
                                 skills={["Unity", "Unreal", "C#", "C++", "Vue.js"]}
-                                actionNodes={<Button startIcon={<OpenInBrowserIcon />}>Visit Website</Button>}
+                                actionNodes={
+                                    <Button startIcon={<OpenInBrowserIcon />} href="https://kinetic-vision.com/" target="_blank">
+                                        Visit Website
+                                    </Button>
+                                }
                             >
                                 <Typography variant="h4">Kinetic Vision</Typography>
                                 <Typography variant="subtitle1" color={"text.secondary"}>
@@ -39,7 +43,11 @@ class Experience extends React.Component {
                                 image={WPAFBImage}
                                 imageTitle="WPAFB"
                                 skills={["Python", "JavaScript", "A-Frame", "HTML/CSS"]}
-                                actionNodes={<Button startIcon={<OpenInBrowserIcon />}>Visit Website</Button>}
+                                actionNodes={
+                                    <Button startIcon={<OpenInBrowserIcon />} href="https://www.wpafb.af.mil/" target="_blank">
+                                        Visit Website
+                                    </Button>
+                                }
                             >
                                 <Typography variant="h4">Wright-Patterson Air Force Base</Typography>
                                 <Typography variant="subtitle1" color={"text.secondary"}>

@@ -1,11 +1,9 @@
 import React from "react";
-import { Box, Button, Container, IconButton, Link, Paper, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Container, IconButton, Link, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
 import SectionBox from "../../general/SectionBox";
-import ExperienceCard from "../../general/ExperienceCard";
 import { withIsSmaller } from "../../general/BreakpointWrapper";
 
 type Props = {
@@ -34,10 +32,10 @@ class Contact extends React.Component<Props> {
                                 <Typography variant="body2">Cincinnati, OH</Typography>
                             </Grid>
                             <Grid xs={12} sm={12} md={4}>
-                                <IconButton color="primary">
+                                <IconButton color="primary" href="https://github.com/Clicky02" target="_blank">
                                     <GitHubIcon></GitHubIcon>
                                 </IconButton>
-                                <IconButton color="primary">
+                                <IconButton color="primary" href="https://www.linkedin.com/in/gareth-fultz/" target="_blank">
                                     <LinkedInIcon></LinkedInIcon>
                                 </IconButton>
                             </Grid>

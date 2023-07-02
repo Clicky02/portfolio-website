@@ -20,10 +20,14 @@ class Experience extends React.Component {
                                 skills={["Unreal", "C++"]}
                                 actionNodes={
                                     <React.Fragment>
-                                        <IconButton color="primary">
+                                        <IconButton color="primary" href="https://github.com/Clicky02/Splintered" target="_blank">
                                             <GitHubIcon></GitHubIcon>
                                         </IconButton>
-                                        <IconButton color="primary">
+                                        <IconButton
+                                            color="primary"
+                                            href="https://www.youtube.com/watch?v=oA8UL58lBug"
+                                            target="_blank"
+                                        >
                                             <YouTubeIcon></YouTubeIcon>
                                         </IconButton>
                                     </React.Fragment>
@@ -44,10 +48,18 @@ class Experience extends React.Component {
                                 skills={["Python", "OpenCV", "Excel", "Statistics"]}
                                 actionNodes={
                                     <React.Fragment>
-                                        <IconButton color="primary">
+                                        <IconButton
+                                            color="primary"
+                                            href="https://github.com/Clicky02/LogoModelling"
+                                            target="_blank"
+                                        >
                                             <GitHubIcon></GitHubIcon>
                                         </IconButton>
-                                        <IconButton color="primary">
+                                        <IconButton
+                                            color="primary"
+                                            href="https://www.youtube.com/watch?v=zTypppMhbUg"
+                                            target="_blank"
+                                        >
                                             <YouTubeIcon></YouTubeIcon>
                                         </IconButton>
                                     </React.Fragment>
@@ -68,7 +80,11 @@ class Experience extends React.Component {
                                 skills={["TypeScript", "React", "Material UI", "CSS"]}
                                 actionNodes={
                                     <React.Fragment>
-                                        <IconButton color="primary">
+                                        <IconButton
+                                            color="primary"
+                                            href="https://github.com/Clicky02/portfolio-website"
+                                            target="_blank"
+                                        >
                                             <GitHubIcon></GitHubIcon>
                                         </IconButton>
                                     </React.Fragment>
@@ -76,7 +92,7 @@ class Experience extends React.Component {
                             >
                                 <Typography variant="h4">Portfolio Website</Typography>
                                 <Typography variant="subtitle1" color={"text.secondary"} mb={2}>
-                                    You are here
+                                    You Are Here ◉
                                 </Typography>
                                 <Typography variant="body1" mb={2}>
                                     I created this website to improve my React ability and have a centralized location to
