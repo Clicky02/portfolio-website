@@ -1,7 +1,7 @@
 import "./App.css";
 
 import Header from "./modules/Header/Header";
-import { Box, CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import { CssBaseline, IconButtonPropsColorOverrides, ThemeProvider, createTheme } from "@mui/material";
 import Home from "./modules/Home/Home";
 import Experience from "./modules/Experience/Experience";
 import Projects from "./modules/Projects/Projects";
@@ -18,7 +18,7 @@ const lightTheme = createTheme({
         primary: {
             main: "#64d1ff",
             light: "#a7e3ff",
-            dark: "#00befd",
+            dark: "#00befdff",
             contrastText: "#FFFFFF",
         },
         secondary: {
@@ -38,6 +38,9 @@ const lightTheme = createTheme({
             light: "#76d170",
             dark: "#009a0a",
             contrastText: "#FFFFFF",
+        },
+        action: {
+            hoverOpacity: 0.11,
         },
     },
     typography: {

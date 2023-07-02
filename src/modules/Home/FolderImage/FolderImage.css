@@ -42,8 +42,12 @@
 }
 
 @keyframes FolderPageHover {
-    from {transform: translateY(-34%);}
-    to {transform: translateY(-38%);}
+    from {
+        transform: translateY(-34%);
+    }
+    to {
+        transform: translateY(-38%);
+    }
 }
 
 #FolderPage {
@@ -63,4 +67,3 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
