@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.7e9b9e85.css",
+    "main.js": "/portfolio-website/static/js/main.45c3a3b4.js",
+    "static/js/787.93dcf1ed.chunk.js": "/portfolio-website/static/js/787.93dcf1ed.chunk.js",
+    "static/media/Inter-VariableFont_slnt.ttf": "/portfolio-website/static/media/Inter-VariableFont_slnt.aadb65ac45347ff46699.ttf",
+    "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/portfolio-website/static/media/Montserrat-Italic-VariableFont_wght.ef11b720b9a6cfb9a317.ttf",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/portfolio-website/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
+    "static/media/KVHeadquarters.jpg": "/portfolio-website/static/media/KVHeadquarters.e0aec3a3743db1a185e4.jpg",
+    "static/media/WPAFBImage.jpg": "/portfolio-website/static/media/WPAFBImage.27b66e4858b59dcdf375.jpg",
+    "static/media/DroidSerif-Bold.ttf": "/portfolio-website/static/media/DroidSerif-Bold.0f36a30460fed7c60a09.ttf",
+    "static/media/DroidSerif-BoldItalic.ttf": "/portfolio-website/static/media/DroidSerif-BoldItalic.80f44cf5db279274eb4d.ttf",
+    "static/media/DroidSerif.ttf": "/portfolio-website/static/media/DroidSerif.5629c884209db361d10c.ttf",
+    "static/media/DroidSerif-Italic.ttf": "/portfolio-website/static/media/DroidSerif-Italic.cf529cc0bb73b86a6c9f.ttf",
+    "index.html": "/portfolio-website/index.html",
+    "main.7e9b9e85.css.map": "/portfolio-website/static/css/main.7e9b9e85.css.map",
+    "main.45c3a3b4.js.map": "/portfolio-website/static/js/main.45c3a3b4.js.map",
+    "787.93dcf1ed.chunk.js.map": "/portfolio-website/static/js/787.93dcf1ed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e9b9e85.css",
+    "static/js/main.45c3a3b4.js"
+  ]
+}
