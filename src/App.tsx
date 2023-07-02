@@ -6,6 +6,7 @@ import Home from "./modules/Home/Home";
 import Experience from "./modules/Experience/Experience";
 import Projects from "./modules/Projects/Projects";
 import Skills from "./modules/Skills/Skills";
+import Contact from "./modules/Footer/Footer";
 
 const lightTheme = createTheme({
     palette: {
@@ -70,7 +71,7 @@ function App() {
                 <Experience></Experience>
                 <Projects></Projects>
                 <Skills></Skills>
-                <Box id="section3" sx={{ height: "150vh" }} />
+                <Contact></Contact>
             </ThemeProvider>
         </div>
     );

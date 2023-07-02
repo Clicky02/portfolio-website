@@ -16,7 +16,7 @@ class Home extends React.Component {
             >
                 <Container>
                     <Stack flexDirection={"row"} justifyContent={"space-around"} flexWrap={"wrap-reverse"}>
-                        <Stack direction={"column"} alignItems={"flex-start"} gap={2} maxWidth={"sm"}>
+                        <Stack direction={"column"} alignItems={"flex-start"} gap={2} maxWidth={"sm"} mt="auto" mb="auto">
                             <Box>
                                 <Typography variant="subtitle1" color={"primary"} fontWeight={"bold"} textAlign={"left"}>
                                     Hello! I'm
@@ -29,16 +29,10 @@ class Home extends React.Component {
                                 And I'm a third year computer science student attending the University of Cincinnati. I made this
                                 website as a portfolio to showcase some of the stuff I've worked on.
                             </Typography>
-                            <Stack flexDirection={"row"} gap={1}>
-                                <ScrollLinkButton variant={"outlined"} to="experience">
-                                    More About Me
-                                </ScrollLinkButton>
-                                <ScrollLinkButton variant={"outlined"} to="experience">
-                                    My Projects
-                                </ScrollLinkButton>
-                            </Stack>
                         </Stack>
-                        <FolderImage />
+                        <Box display="flex" maxWidth={"400px"} maxHeight={"360px"} flexBasis={"400px"}>
+                            <FolderImage />
+                        </Box>
                     </Stack>
                 </Container>
             </Box>
