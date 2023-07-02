@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.7e9b9e85.css",
-    "main.js": "/portfolio-website/static/js/main.45c3a3b4.js",
+    "main.js": "/portfolio-website/static/js/main.3d0194ba.js",
     "static/js/787.93dcf1ed.chunk.js": "/portfolio-website/static/js/787.93dcf1ed.chunk.js",
     "static/media/Inter-VariableFont_slnt.ttf": "/portfolio-website/static/media/Inter-VariableFont_slnt.aadb65ac45347ff46699.ttf",
     "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/portfolio-website/static/media/Montserrat-Italic-VariableFont_wght.ef11b720b9a6cfb9a317.ttf",
@@ -14,11 +14,11 @@
     "static/media/DroidSerif-Italic.ttf": "/portfolio-website/static/media/DroidSerif-Italic.cf529cc0bb73b86a6c9f.ttf",
     "index.html": "/portfolio-website/index.html",
     "main.7e9b9e85.css.map": "/portfolio-website/static/css/main.7e9b9e85.css.map",
-    "main.45c3a3b4.js.map": "/portfolio-website/static/js/main.45c3a3b4.js.map",
+    "main.3d0194ba.js.map": "/portfolio-website/static/js/main.3d0194ba.js.map",
     "787.93dcf1ed.chunk.js.map": "/portfolio-website/static/js/787.93dcf1ed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7e9b9e85.css",
-    "static/js/main.45c3a3b4.js"
+    "static/js/main.3d0194ba.js"
   ]
 }
