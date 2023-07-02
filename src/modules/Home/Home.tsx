@@ -3,9 +3,17 @@ import FolderImage from "./FolderImage/FolderImage";
 import { Box, Button, Container, IconButton, Stack, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { withIsSmaller } from "../../general/BreakpointWrapper";
 
-class Home extends React.Component {
+type Props = {
+    isSmall: boolean;
+};
+
+class Home extends React.Component<Props> {
     render() {
+        const logoSize = this.props.isSmall ? 300 : 400;
+        const padding = 2;
+
         return (
             <Box
                 mt={"var(--header-height)"}
@@ -15,7 +23,13 @@ class Home extends React.Component {
                 id={"home"}
             >
                 <Container>
-                    <Stack flexDirection={"row"} justifyContent={"space-around"} flexWrap={"wrap-reverse"}>
+                    <Stack
+                        flexDirection={"row"}
+                        justifyContent={"space-around"}
+                        flexWrap={"wrap-reverse"}
+                        pl={padding + 1}
+                        pr={padding}
+                    >
                         <Stack direction={"column"} alignItems={"flex-start"} gap={2} maxWidth={"sm"} mt="auto" mb="auto">
                             <Box>
                                 <Typography variant="subtitle1" color={"primary"} fontWeight={"bold"} textAlign={"left"}>
@@ -38,8 +52,13 @@ class Home extends React.Component {
                                 </IconButton>
                             </Stack>
                         </Stack>
-                        <Box display="flex" maxWidth={"400px"} maxHeight={"360px"} flexBasis={"400px"}>
-                            <FolderImage />
+                        <Box
+                            display="flex"
+                            maxWidth={logoSize + "px"}
+                            maxHeight={logoSize * 0.9 + "px"}
+                            flexBasis={logoSize + "px"}
+                        >
+                            <FolderImage width={logoSize} height={logoSize} />
                         </Box>
                     </Stack>
                 </Container>
@@ -48,4 +67,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home;
+export default withIsSmaller("sm")(Home);

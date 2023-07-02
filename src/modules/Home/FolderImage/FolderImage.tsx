@@ -1,12 +1,17 @@
 import React from "react";
 import "./FolderImage.css";
 
+type Props = {
+    width?: number;
+    height?: number;
+};
+
 type State = {
     open: boolean;
 };
 
-class FolderImage extends React.Component<{}, State> {
-    constructor(props: {}) {
+class FolderImage extends React.Component<Props, State> {
+    constructor(props: Props) {
         super(props);
 
         this.state = {
@@ -26,7 +31,8 @@ class FolderImage extends React.Component<{}, State> {
     render() {
         return (
             <svg
-                preserveAspectRatio="xMidYMid meet"
+                width={this.props.width}
+                height={this.props.height}
                 viewBox="0 0 400 400"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

@@ -8,7 +8,6 @@ export const withMediaQuery = (arg: string) => (Component: any) => (props: any) 
 export const withIsSmaller = (breakpoint: number | Breakpoint) => (Component: any) => (props: any) => {
     const theme = useTheme();
     const isSmall = useMediaQuery(theme.breakpoints.down(breakpoint));
-    console.log(isSmall);
     return <Component isSmall={isSmall} {...props} />;
 };
 
