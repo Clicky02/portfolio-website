@@ -40,7 +40,7 @@ class Home extends React.Component<Props> {
                                 </Typography>
                             </Box>
                             <Typography variant="body1" textAlign={"left"}>
-                                And I'm a third year computer science student attending the University of Cincinnati. I made this
+                                I'm a third year computer science student attending the University of Cincinnati. I made this
                                 website as a portfolio to showcase some of the stuff I've worked on.
                             </Typography>
                             <Stack direction={"row"} spacing={1}>
