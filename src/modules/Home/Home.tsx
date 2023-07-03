@@ -1,9 +1,11 @@
 import React from "react";
 import FolderImage from "./FolderImage/FolderImage";
 import { Box, Button, Container, IconButton, Stack, Typography } from "@mui/material";
+import DescriptionIcon from "@mui/icons-material/Description";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { withIsSmaller } from "../../general/BreakpointWrapper";
+import ResumePDF from "./assets/Resume_GarethFultz.pdf";
 
 type Props = {
     isSmall: boolean;
@@ -50,6 +52,9 @@ class Home extends React.Component<Props> {
                                 <IconButton color="primary" href="https://www.linkedin.com/in/gareth-fultz/" target="_blank">
                                     <LinkedInIcon></LinkedInIcon>
                                 </IconButton>
+                                <Button startIcon={<DescriptionIcon />} href={ResumePDF} target="_blank">
+                                    Resume
+                                </Button>
                             </Stack>
                         </Stack>
                         <Box
