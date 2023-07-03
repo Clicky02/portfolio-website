@@ -1,7 +1,7 @@
 import React from "react";
 import "./HeaderLink.css";
-import { ScrollLinkBase } from "../../../general/ScrollLink";
-import { Box, Container } from "@mui/material";
+import { ScrollLinkBase } from "general/ScrollLink";
+import { Box } from "@mui/material";
 
 type HeaderLinkProperties = {
     children?: React.ReactNode;

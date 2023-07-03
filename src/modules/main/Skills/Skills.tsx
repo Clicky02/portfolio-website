@@ -1,10 +1,6 @@
 import React from "react";
-import { Button, Container, IconButton, Paper, Stack, Typography } from "@mui/material";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
-import SectionBox from "../../general/SectionBox";
-import ExperienceCard from "../../general/ExperienceCard";
+import { Container, Paper, Stack, Typography } from "@mui/material";
+import SectionBox from "general/SectionBox";
 
 const SkillCard = (props: any) => (
     <Paper

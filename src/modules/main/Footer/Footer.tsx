@@ -3,8 +3,8 @@ import { Box, Container, IconButton, Link, Stack, Typography } from "@mui/materi
 import Grid from "@mui/material/Unstable_Grid2";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import SectionBox from "../../general/SectionBox";
-import { withIsSmaller } from "../../general/BreakpointWrapper";
+import SectionBox from "general/SectionBox";
+import { withIsSmaller } from "general/BreakpointWrapper";
 
 type Props = {
     isSmall: boolean;

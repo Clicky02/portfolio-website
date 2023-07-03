@@ -4,7 +4,7 @@ import { Box, Button, Container, IconButton, Stack, Typography } from "@mui/mate
 import DescriptionIcon from "@mui/icons-material/Description";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { withIsSmaller } from "../../general/BreakpointWrapper";
+import { withIsSmaller } from "general/BreakpointWrapper";
 import ResumePDF from "./assets/Resume_GarethFultz.pdf";
 
 type Props = {

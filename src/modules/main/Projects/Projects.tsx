@@ -1,10 +1,9 @@
 import React from "react";
-import { Button, Container, IconButton, Stack, Typography } from "@mui/material";
+import { Container, IconButton, Stack, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
-import SectionBox from "../../general/SectionBox";
-import ExperienceCard from "../../general/ExperienceCard";
+import SectionBox from "general/SectionBox";
+import ExperienceCard from "general/ExperienceCard";
 
 class Experience extends React.Component {
     render() {

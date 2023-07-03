@@ -1,6 +1,6 @@
 import React from "react";
 import "./Logo.css";
-import ScrollLinkButton, { ScrollLinkBase } from "../../../general/ScrollLink";
+import ScrollLinkButton, { ScrollLinkBase } from "general/ScrollLink";
 
 class Logo extends React.Component {
     render() {

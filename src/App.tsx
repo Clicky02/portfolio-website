@@ -1,12 +1,7 @@
 import "./App.css";
 
-import Header from "./modules/Header/Header";
 import { CssBaseline, IconButtonPropsColorOverrides, ThemeProvider, createTheme } from "@mui/material";
-import Home from "./modules/Home/Home";
-import Experience from "./modules/Experience/Experience";
-import Projects from "./modules/Projects/Projects";
-import Skills from "./modules/Skills/Skills";
-import Contact from "./modules/Footer/Footer";
+import Main from "modules/main/Main";
 
 const lightTheme = createTheme({
     palette: {
@@ -69,12 +64,7 @@ function App() {
         <div className="App">
             <ThemeProvider theme={lightTheme}>
                 <CssBaseline />
-                <Header></Header>
-                <Home></Home>
-                <Experience></Experience>
-                <Projects></Projects>
-                <Skills></Skills>
-                <Contact></Contact>
+                <Main />
             </ThemeProvider>
         </div>
     );

@@ -1,10 +1,10 @@
 import React from "react";
 import { AppBar, Box, Button, Container, Stack, Toolbar, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import ScrollLinkButton from "../../general/ScrollLink";
-import Logo from "./Logo/Logo";
+import ScrollLinkButton from "general/ScrollLink";
+import Logo from "general/Logo/Logo";
 import HeaderLink from "./HeaderLink/HeaderLink";
-import { withIsSmaller } from "../../general/BreakpointWrapper";
+import { withIsSmaller } from "general/BreakpointWrapper";
 import { type } from "os";
 
 const buttonStyle = {
@@ -19,7 +19,7 @@ type Props = {
     isSmall: boolean;
 };
 
-class Header extends React.Component<Props> {
+class MainHeader extends React.Component<Props> {
     render() {
         const isSmall = this.props.isSmall;
 
@@ -70,4 +70,4 @@ class Header extends React.Component<Props> {
     }
 }
 
-export default withIsSmaller("sm")(Header);
+export default withIsSmaller("sm")(MainHeader);
