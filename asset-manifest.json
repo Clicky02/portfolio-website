@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.f5e12a31.css",
-    "main.js": "/portfolio-website/static/js/main.19acd35c.js",
+    "main.js": "/portfolio-website/static/js/main.aac42638.js",
     "static/js/787.93dcf1ed.chunk.js": "/portfolio-website/static/js/787.93dcf1ed.chunk.js",
     "static/media/Inter-VariableFont_slnt.ttf": "/portfolio-website/static/media/Inter-VariableFont_slnt.aadb65ac45347ff46699.ttf",
     "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/portfolio-website/static/media/Montserrat-Italic-VariableFont_wght.ef11b720b9a6cfb9a317.ttf",
@@ -15,11 +15,11 @@
     "static/media/DroidSerif-Italic.ttf": "/portfolio-website/static/media/DroidSerif-Italic.cf529cc0bb73b86a6c9f.ttf",
     "index.html": "/portfolio-website/index.html",
     "main.f5e12a31.css.map": "/portfolio-website/static/css/main.f5e12a31.css.map",
-    "main.19acd35c.js.map": "/portfolio-website/static/js/main.19acd35c.js.map",
+    "main.aac42638.js.map": "/portfolio-website/static/js/main.aac42638.js.map",
     "787.93dcf1ed.chunk.js.map": "/portfolio-website/static/js/787.93dcf1ed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f5e12a31.css",
-    "static/js/main.19acd35c.js"
+    "static/js/main.aac42638.js"
   ]
 }
