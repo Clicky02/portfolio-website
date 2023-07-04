@@ -37,7 +37,7 @@ class Experience extends React.Component {
                                     A VR Game
                                 </Typography>
                                 <Typography variant="body1" mb={2}>
-                                    Throughout the 2021-2022 school year, I learned how to use Unral Engine 5 by making a
+                                    Throughout the 2021-2022 school year, I learned how to use Unreal Engine 5 by making a
                                     small-scale VR game. The game itself is a wave-fighter, where you fight increasingly difficult
                                     enemies using magic spells.
                                 </Typography>

@@ -42,8 +42,8 @@ class Home extends React.Component<Props> {
                                 </Typography>
                             </Box>
                             <Typography variant="body1" textAlign={"left"}>
-                                I'm a third year computer science student attending the University of Cincinnati. I made this
-                                website as a portfolio to showcase some of the stuff I've worked on.
+                                I'm a fourth year computer science student attending the University of Cincinnati. I made this
+                                website as a portfolio to showcase some of the cool things I've worked on.
                             </Typography>
                             <Stack direction={"row"} spacing={1}>
                                 <IconButton color="primary" href="https://github.com/Clicky02" target="_blank">
@@ -52,7 +52,7 @@ class Home extends React.Component<Props> {
                                 <IconButton color="primary" href="https://www.linkedin.com/in/gareth-fultz/" target="_blank">
                                     <LinkedInIcon></LinkedInIcon>
                                 </IconButton>
-                                <Button startIcon={<DescriptionIcon />} href={ResumePDF} target="_blank">
+                                <Button sx={{ mr: 1 }} startIcon={<DescriptionIcon />} href={ResumePDF} target="_blank">
                                     Resume
                                 </Button>
                             </Stack>
