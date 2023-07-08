@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.f5e12a31.css",
-    "main.js": "/portfolio-website/static/js/main.aac42638.js",
-    "static/js/787.93dcf1ed.chunk.js": "/portfolio-website/static/js/787.93dcf1ed.chunk.js",
+    "main.css": "/portfolio-website/static/css/main.49c3930e.css",
+    "main.js": "/portfolio-website/static/js/main.64a055df.js",
+    "static/js/787.749b4a44.chunk.js": "/portfolio-website/static/js/787.749b4a44.chunk.js",
     "static/media/Inter-VariableFont_slnt.ttf": "/portfolio-website/static/media/Inter-VariableFont_slnt.aadb65ac45347ff46699.ttf",
     "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/portfolio-website/static/media/Montserrat-Italic-VariableFont_wght.ef11b720b9a6cfb9a317.ttf",
     "static/media/Montserrat-VariableFont_wght.ttf": "/portfolio-website/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
@@ -14,12 +14,12 @@
     "static/media/DroidSerif.ttf": "/portfolio-website/static/media/DroidSerif.5629c884209db361d10c.ttf",
     "static/media/DroidSerif-Italic.ttf": "/portfolio-website/static/media/DroidSerif-Italic.cf529cc0bb73b86a6c9f.ttf",
     "index.html": "/portfolio-website/index.html",
-    "main.f5e12a31.css.map": "/portfolio-website/static/css/main.f5e12a31.css.map",
-    "main.aac42638.js.map": "/portfolio-website/static/js/main.aac42638.js.map",
-    "787.93dcf1ed.chunk.js.map": "/portfolio-website/static/js/787.93dcf1ed.chunk.js.map"
+    "main.49c3930e.css.map": "/portfolio-website/static/css/main.49c3930e.css.map",
+    "main.64a055df.js.map": "/portfolio-website/static/js/main.64a055df.js.map",
+    "787.749b4a44.chunk.js.map": "/portfolio-website/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5e12a31.css",
-    "static/js/main.aac42638.js"
+    "static/css/main.49c3930e.css",
+    "static/js/main.64a055df.js"
   ]
 }
