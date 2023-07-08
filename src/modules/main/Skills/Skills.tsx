@@ -42,7 +42,7 @@ class Skills extends React.Component {
             <SectionBox id={"skills"}>
                 <Container maxWidth={"xl"}>
                     <Stack ml="auto" mr="auto" direction={"column"} justifyContent={"center"} alignItems={"center"} gap={2}>
-                        <Typography variant="h3" mb={3}>
+                        <Typography variant="h2" mb={3}>
                             Skills
                         </Typography>
                         <Stack direction={"row"} flexWrap={"wrap"} maxWidth={"sm"} justifyContent={"center"} gap={2}>

@@ -28,7 +28,7 @@ class Contact extends React.Component<Props> {
                     <Container maxWidth={"md"}>
                         <Grid container spacing={2}>
                             <Grid sm={0} md={4} textAlign={"left"} display={this.props.isSmall ? "none" : undefined}>
-                                <Typography variant="h6">Located</Typography>
+                                <Typography variant="h5">Located</Typography>
                                 <Typography variant="body2">Cincinnati, OH</Typography>
                             </Grid>
                             <Grid xs={12} sm={12} md={4}>
@@ -40,7 +40,7 @@ class Contact extends React.Component<Props> {
                                 </IconButton>
                             </Grid>
                             <Grid xs={12} sm={12} md={4} textAlign={this.props.isSmall ? undefined : "right"}>
-                                <Typography variant="h6">Contact Me</Typography>
+                                <Typography variant="h5">Contact Me</Typography>
                                 <Typography>
                                     <Link variant="body2" href="mailto: garethfultz@gmail.com">
                                         garethfultz@gmail.com

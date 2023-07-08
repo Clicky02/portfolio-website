@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Chip, Container, Stack, Typography } from "@mui/material";
+import { Button, Container, Stack, Typography } from "@mui/material";
 import KVHeadquartersImage from "./images/KVHeadquarters.jpg";
 import WPAFBImage from "./images/WPAFBImage.jpg";
 import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
@@ -12,7 +12,7 @@ class Experience extends React.Component {
             <SectionBox id={"experience"}>
                 <Container maxWidth={"xl"}>
                     <Stack ml="auto" mr="auto" direction={"column"} gap={2}>
-                        <Typography variant="h3" mb={3}>
+                        <Typography variant="h2" mb={3}>
                             Experience
                         </Typography>
                         <Stack flexDirection={"row"} justifyContent={"center"} gap={3} flexWrap={"wrap"}>
@@ -26,7 +26,7 @@ class Experience extends React.Component {
                                     </Button>
                                 }
                             >
-                                <Typography variant="h4">Kinetic Vision</Typography>
+                                <Typography variant="h3">Kinetic Vision</Typography>
                                 <Typography variant="subtitle1" color={"text.secondary"}>
                                     Software Engineer Co-op
                                 </Typography>
@@ -49,7 +49,7 @@ class Experience extends React.Component {
                                     </Button>
                                 }
                             >
-                                <Typography variant="h4">Wright-Patterson Air Force Base</Typography>
+                                <Typography variant="h3">Wright-Patterson Air Force Base</Typography>
                                 <Typography variant="subtitle1" color={"text.secondary"}>
                                     Wright Scholar Research Assistant
                                 </Typography>

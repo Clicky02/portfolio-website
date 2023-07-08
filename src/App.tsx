@@ -1,7 +1,11 @@
 import "./App.css";
 
-import { CssBaseline, IconButtonPropsColorOverrides, ThemeProvider, createTheme } from "@mui/material";
+import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import Blog from "modules/blog/Blog";
+import BlogList from "modules/blog/BlogList";
+import BlogRenderer from "modules/blog/BlogRenderer";
 import Main from "modules/main/Main";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const lightTheme = createTheme({
     palette: {
@@ -40,6 +44,12 @@ const lightTheme = createTheme({
     },
     typography: {
         fontFamily: ["inter", "droidSerif"].join(","),
+        h1: { fontSize: 60 },
+        h2: { fontSize: 48 },
+        h3: { fontSize: 34 },
+        h4: { fontSize: 24 },
+        h5: { fontSize: 20 },
+        h6: { fontSize: 18 },
         subtitle1: {
             fontSize: 18,
         },
@@ -62,10 +72,18 @@ const lightTheme = createTheme({
 function App() {
     return (
         <div className="App">
-            <ThemeProvider theme={lightTheme}>
-                <CssBaseline />
-                <Main />
-            </ThemeProvider>
+            <BrowserRouter basename="/portfolio-website">
+                <ThemeProvider theme={lightTheme}>
+                    <CssBaseline />
+                    <Routes>
+                        <Route index element={<Main />} />
+                        <Route path="blog" element={<Blog />}>
+                            <Route index element={<BlogList />} />
+                            <Route path=":page" element={<BlogRenderer />} />
+                        </Route>
+                    </Routes>
+                </ThemeProvider>
+            </BrowserRouter>
         </div>
     );
 }

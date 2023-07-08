@@ -17,13 +17,7 @@ class Home extends React.Component<Props> {
         const padding = 2;
 
         return (
-            <Box
-                mt={"var(--header-height)"}
-                minHeight={"calc(100vh - var(--header-height))"}
-                display={"flex"}
-                alignItems={"center"}
-                id={"home"}
-            >
+            <Box minHeight={"calc(100vh - var(--header-height))"} display={"flex"} alignItems={"center"} id={"home"}>
                 <Container>
                     <Stack
                         flexDirection={"row"}
@@ -37,7 +31,7 @@ class Home extends React.Component<Props> {
                                 <Typography variant="subtitle1" color={"primary"} fontWeight={"bold"} textAlign={"left"}>
                                     Hello! I'm
                                 </Typography>
-                                <Typography variant="h2" textAlign={"left"}>
+                                <Typography variant="h1" textAlign={"left"}>
                                     Gareth Fultz
                                 </Typography>
                             </Box>
@@ -52,7 +46,7 @@ class Home extends React.Component<Props> {
                                 <IconButton color="primary" href="https://www.linkedin.com/in/gareth-fultz/" target="_blank">
                                     <LinkedInIcon></LinkedInIcon>
                                 </IconButton>
-                                <Button sx={{ mr: 1 }} startIcon={<DescriptionIcon />} href={ResumePDF} target="_blank">
+                                <Button sx={{ ml: 1 }} startIcon={<DescriptionIcon />} href={ResumePDF} target="_blank">
                                     Resume
                                 </Button>
                             </Stack>

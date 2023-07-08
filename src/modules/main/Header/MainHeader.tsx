@@ -1,19 +1,10 @@
 import React from "react";
-import { AppBar, Box, Button, Container, Stack, Toolbar, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import ScrollLinkButton from "general/ScrollLink";
+import { ScrollLinkBase } from "general/ScrollLink";
 import Logo from "general/Logo/Logo";
 import HeaderLink from "./HeaderLink/HeaderLink";
 import { withIsSmaller } from "general/BreakpointWrapper";
-import { type } from "os";
-
-const buttonStyle = {
-    marginRight: 2,
-    color: "#666",
-    "&:hover": {
-        color: "#000",
-    },
-};
+import HeaderBar from "general/HeaderBar";
 
 type Props = {
     isSmall: boolean;
@@ -35,37 +26,27 @@ class MainHeader extends React.Component<Props> {
         );
 
         return (
-            <AppBar
-                position="fixed"
-                color={"transparent"}
-                sx={{
-                    backgroundColor: "#FFF",
-                    boxShadow: "none",
-                    borderBottom: "solid 1px #d0d7de",
-                    borderImage:
-                        "linear-gradient( 90deg, rgba(255, 255, 255, 1) 0%, rgba(208, 215, 222, 1) 14%, rgba(208, 215, 222, 1) 86%, rgba(255, 255, 255, 1) 100%) 1 1",
-                }}
-            >
-                <Toolbar sx={{ height: "var(--header-height)" }}>
-                    <Grid container mr={"auto"} ml={"auto"} width={"100%"} maxWidth={"md"} spacing={2}>
-                        <HeaderGridItem>
-                            <HeaderLink to="home">Home</HeaderLink>
-                        </HeaderGridItem>
-                        <HeaderGridItem>
-                            <HeaderLink to="experience">Experience</HeaderLink>
-                        </HeaderGridItem>
-                        <HeaderGridItem display={undefined}>
+            <HeaderBar>
+                <Grid container mr={"auto"} ml={"auto"} width={"100%"} maxWidth={"md"} spacing={2}>
+                    <HeaderGridItem>
+                        <HeaderLink to="home">Home</HeaderLink>
+                    </HeaderGridItem>
+                    <HeaderGridItem>
+                        <HeaderLink to="experience">Experience</HeaderLink>
+                    </HeaderGridItem>
+                    <HeaderGridItem display={undefined}>
+                        <ScrollLinkBase to="home" className="NoDecoration NoSelect">
                             <Logo />
-                        </HeaderGridItem>
-                        <HeaderGridItem>
-                            <HeaderLink to="projects">Projects</HeaderLink>
-                        </HeaderGridItem>
-                        <HeaderGridItem>
-                            <HeaderLink to="skills">Skills</HeaderLink>
-                        </HeaderGridItem>
-                    </Grid>
-                </Toolbar>
-            </AppBar>
+                        </ScrollLinkBase>
+                    </HeaderGridItem>
+                    <HeaderGridItem>
+                        <HeaderLink to="projects">Projects</HeaderLink>
+                    </HeaderGridItem>
+                    <HeaderGridItem>
+                        <HeaderLink to="skills">Skills</HeaderLink>
+                    </HeaderGridItem>
+                </Grid>
+            </HeaderBar>
         );
     }
 }

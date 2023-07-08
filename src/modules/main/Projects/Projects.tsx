@@ -11,7 +11,7 @@ class Experience extends React.Component {
             <SectionBox id={"projects"}>
                 <Container maxWidth={"xl"}>
                     <Stack ml="auto" mr="auto" direction={"column"} gap={2}>
-                        <Typography variant="h3" mb={3}>
+                        <Typography variant="h2" mb={3}>
                             Projects
                         </Typography>
                         <Stack flexDirection={"row"} justifyContent={"center"} gap={3} flexWrap={"wrap"}>
@@ -32,7 +32,7 @@ class Experience extends React.Component {
                                     </React.Fragment>
                                 }
                             >
-                                <Typography variant="h4">Splintered</Typography>
+                                <Typography variant="h3">Splintered</Typography>
                                 <Typography variant="subtitle1" color={"text.secondary"} mb={2}>
                                     A VR Game
                                 </Typography>
@@ -64,7 +64,7 @@ class Experience extends React.Component {
                                     </React.Fragment>
                                 }
                             >
-                                <Typography variant="h4">Logo Analysis</Typography>
+                                <Typography variant="h3">Logo Analysis</Typography>
                                 <Typography variant="subtitle1" color={"text.secondary"} mb={2}>
                                     Models II CEAS Research
                                 </Typography>
@@ -89,7 +89,7 @@ class Experience extends React.Component {
                                     </React.Fragment>
                                 }
                             >
-                                <Typography variant="h4">Portfolio Website</Typography>
+                                <Typography variant="h3">Portfolio Website</Typography>
                                 <Typography variant="subtitle1" color={"text.secondary"} mb={2}>
                                     You Are Here ◉
                                 </Typography>
