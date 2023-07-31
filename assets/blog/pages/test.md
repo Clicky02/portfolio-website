@@ -1,7 +1,7 @@
 ---
 title: Creating a VR Game
 author: Gareth Fultz
-date: 15/02/2013
+date: 02/15/13
 tags: ["Project", "Splintered", "VR"]
 ---
 
