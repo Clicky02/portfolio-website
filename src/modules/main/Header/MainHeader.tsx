@@ -5,6 +5,9 @@ import Logo from "general/Logo/Logo";
 import HeaderLink from "./HeaderLink/HeaderLink";
 import { withIsSmaller } from "general/BreakpointWrapper";
 import HeaderBar from "general/HeaderBar";
+import { IconButton } from "@mui/material";
+import { Link } from "react-router-dom";
+import ArticleIcon from "@mui/icons-material/Article";
 
 type Props = {
     isSmall: boolean;
@@ -17,7 +20,8 @@ class MainHeader extends React.Component<Props> {
         const HeaderGridItem = (props: any) => (
             <Grid
                 xs={12}
-                sm={2.4}
+                sm={12}
+                md={2.4}
                 display={isSmall ? "none" : "flex"}
                 justifyContent={"center"}
                 alignContent={"center"}
@@ -26,7 +30,13 @@ class MainHeader extends React.Component<Props> {
         );
 
         return (
-            <HeaderBar>
+            <HeaderBar
+                right={
+                    <IconButton component={Link} to={"/blog"} sx={{ mr: "auto" }}>
+                        <ArticleIcon />
+                    </IconButton>
+                }
+            >
                 <Grid container mr={"auto"} ml={"auto"} width={"100%"} maxWidth={"md"} spacing={2}>
                     <HeaderGridItem>
                         <HeaderLink to="home">Home</HeaderLink>
@@ -51,4 +61,4 @@ class MainHeader extends React.Component<Props> {
     }
 }
 
-export default withIsSmaller("sm")(MainHeader);
+export default withIsSmaller("md")(MainHeader);

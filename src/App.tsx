@@ -2,10 +2,10 @@ import "./App.css";
 
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import Blog from "modules/blog/Blog";
-import BlogList from "modules/blog/BlogList";
+import BlogHome from "modules/blog/BlogHome";
 import BlogRenderer from "modules/blog/BlogRenderer";
 import Main from "modules/main/Main";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 const lightTheme = createTheme({
     palette: {
@@ -72,18 +72,18 @@ const lightTheme = createTheme({
 function App() {
     return (
         <div className="App">
-            <BrowserRouter basename="/portfolio-website">
+            <HashRouter>
                 <ThemeProvider theme={lightTheme}>
                     <CssBaseline />
                     <Routes>
                         <Route index element={<Main />} />
                         <Route path="blog" element={<Blog />}>
-                            <Route index element={<BlogList />} />
+                            <Route index element={<BlogHome />} />
                             <Route path=":page" element={<BlogRenderer />} />
                         </Route>
                     </Routes>
                 </ThemeProvider>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 }
