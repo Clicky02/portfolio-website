@@ -72,7 +72,7 @@ class BlogRenderer extends React.Component<Props, State> {
     componentDidUpdate(prevProps: Readonly<Props>, prevState: Readonly<State>, snapshot?: any): void {
         const pageId = this.props.params["page"];
 
-        if (pageId == prevProps.params["page"]) {
+        if (pageId === prevProps.params["page"]) {
             return;
         }
 
