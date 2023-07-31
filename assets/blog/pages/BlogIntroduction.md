@@ -1,6 +1,6 @@
 ---
 title: Blog Introduction
-date: 07/16/2023
+date: 07/16/23
 isPinned: true
 ---
 

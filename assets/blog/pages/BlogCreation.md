@@ -1,6 +1,6 @@
 ---
 title: Blog Creation
-date: 07/30/2023
+date: 07/30/23
 tags: ["Blog"]
 ---
 
