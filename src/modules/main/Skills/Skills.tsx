@@ -4,8 +4,8 @@ import SectionBox from "general/SectionBox";
 
 const SkillCard = (props: any) => (
     <Paper
-        elevation={3}
-        sx={{ paddingTop: 1, paddingBottom: 1, paddingLeft: 1.5, paddingRight: 1.5, borderRadius: 1.5 }}
+        variant="outlined"
+        sx={{ paddingTop: 1, paddingBottom: 1, paddingLeft: 2, paddingRight: 2, borderRadius: 3, borderColor: "#bdbdbd" }}
         {...props}
     />
 );

@@ -1,7 +1,6 @@
 import React from "react";
-import { Card, CardActions, CardContent, CardMedia, Chip, Stack } from "@mui/material";
-
-const SkillChip = (props: any) => <Chip variant="outlined" {...props} />;
+import { Card, CardActions, CardContent, CardMedia, Stack } from "@mui/material";
+import { SkillChip } from "./SkillChip";
 
 type Props = {
     children?: React.ReactNode;
@@ -18,7 +17,7 @@ class ExperienceCard extends React.Component<Props> {
 
     render() {
         return (
-            <Card elevation={4} sx={{ display: "flex", flexDirection: "column", width: 380 }}>
+            <Card variant="outlined" elevation={4} sx={{ display: "flex", flexDirection: "column", width: 380 }}>
                 {this.props.image != null ? (
                     <CardMedia sx={{ height: 150 }} image={this.props.image} title={this.props.imageTitle} />
                 ) : (
