@@ -5,7 +5,7 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { withIsSmaller } from "general/BreakpointWrapper";
-import ResumePDF from "./assets/Resume_GarethFultz.pdf";
+import ResumePDF from "./assets/Fultz_Gareth_Resume_Fall2024.pdf";
 
 type Props = {
     isSmall: boolean;

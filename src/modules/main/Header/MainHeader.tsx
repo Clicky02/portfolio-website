@@ -31,11 +31,11 @@ class MainHeader extends React.Component<Props> {
 
         return (
             <HeaderBar
-                right={
-                    <IconButton component={Link} to={"/blog"} sx={{ mr: "auto" }}>
-                        <ArticleIcon />
-                    </IconButton>
-                }
+            // right={
+            //     <IconButton component={Link} to={"/blog"} sx={{ mr: "auto" }}>
+            //         <ArticleIcon />
+            //     </IconButton>
+            // }
             >
                 <Grid container mr={"auto"} ml={"auto"} width={"100%"} maxWidth={"md"} spacing={2}>
                     <HeaderGridItem>
