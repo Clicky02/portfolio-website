@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Container, Stack, Typography } from "@mui/material";
 import KVHeadquartersImage from "./images/KVHeadquarters.jpg";
 import WPAFBImage from "./images/WPAFBImage.jpg";
+import SRCImage from "./images/src-building.jpg";
 import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
 import SectionBox from "general/SectionBox";
 import ExperienceCard from "general/ExperienceCard";
@@ -17,6 +18,29 @@ class Experience extends React.Component {
                         </Typography>
                         <Stack flexDirection={"row"} justifyContent={"center"} gap={3} flexWrap={"wrap"}>
                             <ExperienceCard
+                                image={SRCImage}
+                                imageTitle="SRC's headquarter"
+                                skills={["Typescript", "Python", "Rust", "React", "Flask"]}
+                                actionNodes={
+                                    <Button startIcon={<OpenInBrowserIcon />} href="https://www.srcinc.com/" target="_blank">
+                                        Visit Website
+                                    </Button>
+                                }
+                            >
+                                <Typography variant="h3">SRC</Typography>
+                                <Typography variant="subtitle1" color={"text.secondary"}>
+                                    Software Engineer Co-op
+                                </Typography>
+                                <Typography variant="subtitle2" color={"text.secondary"} mb={2}>
+                                    January 2024 - August 2024
+                                </Typography>
+                                <Typography variant="body1" mb={2}>
+                                    Designed and created a tool for demonstrating and debugging arbitrary algorithms and algorithm
+                                    chains. Created a Rust library for reading and writing a specific file type.
+                                </Typography>
+                            </ExperienceCard>
+
+                            <ExperienceCard
                                 image={KVHeadquartersImage}
                                 imageTitle="Kinetic Vision's headquarter"
                                 skills={["Unity", "Unreal", "C#", "C++", "Vue.js"]}
@@ -31,7 +55,7 @@ class Experience extends React.Component {
                                     Software Engineer Co-op
                                 </Typography>
                                 <Typography variant="subtitle2" color={"text.secondary"} mb={2}>
-                                    August 2021 - Present
+                                    August 2021 - December 2023
                                 </Typography>
                                 <Typography variant="body1" mb={2}>
                                     Utilized game engines and cutting-edge technology to create interactive AR, VR, Web, and other
