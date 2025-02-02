@@ -1,6 +1,6 @@
 import { Box, Chip, Container, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent, Typography } from "@mui/material";
 import React, { ReactNode } from "react";
-import BlogList from "./BlogList";
+import { BlogList } from "./BlogList";
 import { BlogTags } from "./PageList";
 
 function getStyleForTagOption(name: string, selected: readonly string[]) {
@@ -76,7 +76,7 @@ class BlogHome extends React.Component<{}, State> {
         );
     }
 
-    handleTagsChange(event: SelectChangeEvent<string[]>, child: ReactNode): void {
+    handleTagsChange(event: SelectChangeEvent<string[]>, _child: ReactNode): void {
         if (typeof event.target.value === "string") {
             this.setState({ tags: [event.target.value] });
         } else {

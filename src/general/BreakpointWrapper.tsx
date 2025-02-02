@@ -1,18 +1,13 @@
 import { Breakpoint, useMediaQuery, useTheme } from "@mui/material";
 
-export const withMediaQuery = (arg: string) => (Component: any) => (props: any) => {
-    const mediaQuery = useMediaQuery(arg);
-    return <Component mediaQuery={mediaQuery} {...props} />;
-};
-
-export const withIsSmaller = (breakpoint: number | Breakpoint) => (Component: any) => (props: any) => {
+export const useIsSmaller = (breakpoint: number | Breakpoint) => {
     const theme = useTheme();
     const isSmall = useMediaQuery(theme.breakpoints.down(breakpoint));
-    return <Component isSmall={isSmall} {...props} />;
+    return isSmall;
 };
 
-export const withIsLarger = (breakpoint: number | Breakpoint) => (Component: any) => (props: any) => {
+export const useIsLarger = (breakpoint: number | Breakpoint) => {
     const theme = useTheme();
     const isLarge = useMediaQuery(theme.breakpoints.up(breakpoint));
-    return <Component isLarge={isLarge} {...props} />;
+    return isLarge;
 };

@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Paper, Stack, Typography } from "@mui/material";
 import SectionBox from "general/SectionBox";
 
@@ -36,25 +35,21 @@ const skills: string[] = [
     "MySQL",
 ];
 
-class Skills extends React.Component {
-    render() {
-        return (
-            <SectionBox id={"skills"}>
-                <Container maxWidth={"xl"}>
-                    <Stack ml="auto" mr="auto" direction={"column"} justifyContent={"center"} alignItems={"center"} gap={2}>
-                        <Typography variant="h2" mb={3}>
-                            Skills
-                        </Typography>
-                        <Stack direction={"row"} flexWrap={"wrap"} maxWidth={"sm"} justifyContent={"center"} gap={2}>
-                            {skills.map((value, index) => (
-                                <SkillCard key={index}>{value}</SkillCard>
-                            ))}
-                        </Stack>
+export function Skills() {
+    return (
+        <SectionBox id={"skills"}>
+            <Container maxWidth={"xl"}>
+                <Stack ml="auto" mr="auto" direction={"column"} justifyContent={"center"} alignItems={"center"} gap={2}>
+                    <Typography variant="h2" mb={3}>
+                        Skills
+                    </Typography>
+                    <Stack direction={"row"} flexWrap={"wrap"} maxWidth={"sm"} justifyContent={"center"} gap={2}>
+                        {skills.map((value, index) => (
+                            <SkillCard key={index}>{value}</SkillCard>
+                        ))}
                     </Stack>
-                </Container>
-            </SectionBox>
-        );
-    }
+                </Stack>
+            </Container>
+        </SectionBox>
+    );
 }
-
-export default Skills;

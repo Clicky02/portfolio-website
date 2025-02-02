@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@mui/material";
 import { Link as ScrollLink } from "react-scroll";
 
-const ScrollLinkBase = React.forwardRef((props: any, ref) => {
+const ScrollLinkBase = React.forwardRef((props: any, _ref) => {
     const { className, ...newProps } = props;
     return (
         <ScrollLink

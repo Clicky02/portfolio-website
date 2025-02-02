@@ -8,17 +8,13 @@ type HeaderLinkProperties = {
     to: string;
 };
 
-class HeaderLink extends React.Component<HeaderLinkProperties> {
-    render() {
-        return (
-            <Box mt="auto" mb="auto">
-                <ScrollLinkBase className={"HeaderLinkHolder"} activeClass="active" to={this.props.to}>
-                    <div className="HeaderLinkText">{this.props.children}</div>
-                    <div className="HeaderLinkUnderline" />
-                </ScrollLinkBase>
-            </Box>
-        );
-    }
+export function HeaderLink(props: HeaderLinkProperties) {
+    return (
+        <Box mt="auto" mb="auto">
+            <ScrollLinkBase className={"HeaderLinkHolder"} activeClass="active" to={props.to}>
+                <div className="HeaderLinkText">{props.children}</div>
+                <div className="HeaderLinkUnderline" />
+            </ScrollLinkBase>
+        </Box>
+    );
 }
-
-export default HeaderLink;

@@ -11,7 +11,7 @@ export type BlogPage = {
 };
 
 const rawPages: any[] = preval`
-    module.exports=require(__dirname +'/pageDataFetch.js');
+module.exports=require(__dirname +'/pageDataFetch.cjs');
 `;
 
 const pages: BlogPage[] = [];

@@ -17,7 +17,7 @@ class ExperienceCard extends React.Component<Props> {
 
     render() {
         return (
-            <Card variant="outlined" elevation={4} sx={{ display: "flex", flexDirection: "column", width: 380 }}>
+            <Card variant="outlined" sx={{ display: "flex", flexDirection: "column", width: 380 }}>
                 {this.props.image != null ? (
                     <CardMedia sx={{ height: 150 }} image={this.props.image} title={this.props.imageTitle} />
                 ) : (

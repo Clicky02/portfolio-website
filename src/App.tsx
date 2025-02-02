@@ -3,7 +3,7 @@ import "./App.css";
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import Blog from "modules/blog/Blog";
 import BlogHome from "modules/blog/BlogHome";
-import BlogRenderer from "modules/blog/BlogRenderer";
+import { BlogRenderer } from "modules/blog/BlogRenderer";
 import Main from "modules/main/Main";
 import { HashRouter, Route, Routes } from "react-router-dom";
 

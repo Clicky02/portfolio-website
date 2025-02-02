@@ -1,5 +1,5 @@
 import React from "react";
-import BlogHeader from "./Header/BlogHeader";
+import { BlogHeader } from "./Header/BlogHeader";
 import { Outlet } from "react-router-dom";
 
 function Blog() {
