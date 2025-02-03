@@ -9,8 +9,16 @@ import "./Resume.css";
 const resume: Resume = {
     name: "Gareth Fultz",
     info: [
-        ListEntry(undefined, [Val("Cincinnati, OH"), Val("(937) 581-1438"), Val("fultzgc@mail.uc.edu")], "            |  "),
-        ListEntry(undefined, [Val("linkedin.com/in/gareth-fultz"), Val("garethfultz.com"), Val("github.com/Clicky02")], "  |  "),
+        ListEntry(
+            undefined,
+            [Val("Cincinnati, OH"), Val("(937) 581-1438"), Val("fultzgc@mail.uc.edu")],
+            "\u00A0\u00A0|\u00A0\u00A0"
+        ),
+        ListEntry(
+            undefined,
+            [Val("linkedin.com/in/gareth-fultz"), Val("garethfultz.com"), Val("github.com/Clicky02")],
+            "\u00A0\u00A0|\u00A0\u00A0"
+        ),
     ],
     sections: [
         Category("Education", [
