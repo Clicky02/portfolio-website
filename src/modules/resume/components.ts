@@ -6,7 +6,7 @@ export type Resume = {
     name: string;
     info: ListEntry[];
     sections: Category[];
-    footer: string;
+    footer?: string;
 };
 
 export type Category = {

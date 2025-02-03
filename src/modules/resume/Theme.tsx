@@ -43,9 +43,7 @@ export const resumeTheme = createTheme({
         h4: { fontSize: "10pt", fontStyle: "italic", lineHeight: 1.2 },
         h5: { fontSize: "10pt" },
         h6: { fontSize: "10pt" },
-        subtitle1: {
-            fontSize: "10pt",
-        },
+        subtitle1: { fontSize: "10pt" },
         body1: { fontSize: "10pt", lineHeight: 1.2, textAlign: "justify" },
         body2: { fontSize: "10pt", lineHeight: 1.2, fontStyle: "italic" },
     },

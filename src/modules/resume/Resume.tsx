@@ -33,6 +33,12 @@ const resume: Resume = {
                 Val("Computer Networks"),
                 Val("Advanced Software Engineering"),
                 Val("Database Design and Development"),
+                Val("Algorithms", DocType.Full),
+                Val("Technical Writing", DocType.Full),
+                Val("Calculus", DocType.Full),
+                Val("Linear Algebra", DocType.Full),
+                Val("Python Programming", DocType.Full),
+                Val("Information Security and Assurance", DocType.Full),
             ]),
             education("University of Cincinnati", "Master of Engineering", "Computer Science", new Date(2025, 4), 4.0, [
                 Val("Deep Learning"),
@@ -76,9 +82,10 @@ const resume: Resume = {
                     "Other",
                     [
                         Val("Time Management"),
-                        Val("Excellent Communication Skills"),
-                        Val("Willing to Learn"),
-                        Val("Passion for Programming"),
+                        Val("Communication"),
+                        Val("Collaboration"),
+                        Val("Adaptability"),
+                        Val("Problem Solving"),
                     ],
                     ", ",
                     DocType.Full
@@ -88,7 +95,7 @@ const resume: Resume = {
         Category("Work Experience", [
             work("SRC", "Software-Engineer Co-op", DateRange(new Date(2024, 0), new Date(2024, 7)), [
                 Val(
-                    "Developed an application for demonstrating and debugging arbitrary algorithms and algorithm chains, utilizing React and Quart (a Flask-like webserver library for Python)."
+                    "Developed an application for demonstrating and debugging arbitrary algorithms and algorithm chains, utilizing React and Quart (a Flask-like web server library for Python)."
                 ),
                 Val(
                     "Designed and built a Rust library for reading and writing a file type which supports multiple data sizes and formats."
@@ -115,7 +122,8 @@ const resume: Resume = {
                         "Developed features involving model analysis, multidimensional data visualization, and using real time sensor data to visualize objects in a virtual setting."
                     ),
                     Val(
-                        "Wrote an add-on application allowing users to load a 3D object and deconstruct it in a virtual environment."
+                        "Wrote an add-on application allowing users to load a 3D object and deconstruct it in a virtual environment.",
+                        DocType.Full
                     ),
                     Val("Diagnosed and fixed issues in a large open-source library using debugging tools."),
                 ]
@@ -151,8 +159,8 @@ const resume: Resume = {
         ]),
 
         Category("Activities", [
-            activity("Bearcat Coders", "Volunteer", DateRange(new Date(2022, 7), new Date(2024, 11))),
             activity("ACM", "Member", DateRange(new Date(2022, 7))),
+            activity("Bearcat Coders", "Volunteer", DateRange(new Date(2022, 7), new Date(2024, 11))),
             activity("IEEE", "Member", DateRange(new Date(2020, 10))),
             activity("Cross-Country", "Captain", DateRange(new Date(2019, 6), new Date(2020, 11)), DocType.Full),
             activity("National Honor Society", "Member", DateRange(new Date(2018, 0), new Date(2020, 4)), DocType.Full),
@@ -160,16 +168,16 @@ const resume: Resume = {
         ]),
 
         Category("Awards & Honors", [
-            award("Tau Beta Pi Engineering Honor Society Member", DateRange(new Date(2024, 10))),
-            award("CS Student of the Year Nominee", new Date(2023, 4), DocType.Full),
-            award("Cincinnatus Scholarship", DateRange(new Date(2021, 7))),
-            award("Mantei/Mae Award", "April 2022, 2023, & 2024"),
-            award("High School Valedictorian", new Date(2020, 4)),
-            award("National Merit Scholarship Finalist/Recipient", new Date(2020, 4)),
-            award("Middletown Community Foundation Scholarship", new Date(2020, 7), DocType.Full),
+            award("Tau Beta Pi Member", "Engineering Honor Society", DateRange(new Date(2024, 10))),
+            award("CS Student of the Year Nominee", undefined, new Date(2023, 4), DocType.Full),
+            award("Cincinnatus Scholarship", "For Academic Excellence", DateRange(new Date(2021, 7))),
+            award("Mantei/Mae Award", "For Academic Excellence", [new Date(2022, 3), new Date(2023, 3), new Date(2024, 3)]),
+            award("High School Valedictorian", undefined, new Date(2020, 4)),
+            award("National Merit Scholarship Finalist/Recipient", undefined, new Date(2020, 4)),
+            award("Middletown Community Foundation Scholarship", "For Academics and Service", new Date(2020, 7), DocType.Full),
         ]),
     ],
-    footer: "Seeking a Full-Time Position starting in Summer 2025",
+    // footer: "Seeking a Full-Time Position starting in Summer 2025",
 };
 
 export function ResumePage() {
@@ -182,7 +190,7 @@ export function ResumePage() {
     return (
         <ThemeProvider theme={resumeTheme}>
             <CssBaseline />
-            <Container maxWidth={false} sx={{ display: "flex", flexDirection: "column", maxWidth: "8in" }}>
+            <Container maxWidth={false} sx={{ display: "flex", flexDirection: "column", maxWidth: "8in", height: "100vh" }}>
                 <Box
                     sx={{
                         "@media print": { display: "none" },

@@ -11,12 +11,6 @@ function dateString(val: Date): string {
     });
 }
 
-// function listEntry(prefix: string | null, values: string[]): Entry {
-//     return {
-//         text: (prefix ? `${prefix}: ` : prefix) + values.join(", "),
-//     };
-// }
-
 export function education(
     school: string,
     degree: string,
@@ -57,10 +51,20 @@ export function activity(name: string, role: string, duration: DateRange, show_i
     };
 }
 
-export function award(name: string, duration: DateRange | Date | string, show_in: DocType = DocType.All): Block {
+export function award(
+    name: string,
+    info: string | undefined,
+    duration: DateRange | Date | Date[],
+    show_in: DocType = DocType.All
+): Block {
     let date_str;
-    if (typeof duration === "string") {
-        date_str = duration;
+    if (Array.isArray(duration)) {
+        date_str = duration.reduce((prev, next, i) => {
+            const first = i == 0;
+            const last = i == duration.length - 1;
+            const separator = first ? "" : last ? ", & " : ", ";
+            return prev + separator + dateString(next);
+        }, "");
     } else if (duration instanceof Date) {
         date_str = dateString(duration);
     } else {
@@ -68,7 +72,7 @@ export function award(name: string, duration: DateRange | Date | string, show_in
     }
 
     return {
-        title: Title(name, undefined, date_str),
+        title: Title(name, info, date_str),
         showIn: show_in,
     };
 }
