@@ -4,7 +4,8 @@ import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import Blog from "modules/blog/Blog";
 import BlogHome from "modules/blog/BlogHome";
 import { BlogRenderer } from "modules/blog/BlogRenderer";
-import Main from "modules/main/Main";
+import { Main } from "modules/main/Main";
+import { ResumePage } from "modules/resume/Resume";
 import { HashRouter, Route, Routes } from "react-router-dom";
 
 const lightTheme = createTheme({
@@ -81,6 +82,7 @@ function App() {
                             <Route index element={<BlogHome />} />
                             <Route path=":page" element={<BlogRenderer />} />
                         </Route>
+                        <Route path="resume" element={<ResumePage />}></Route>
                     </Routes>
                 </ThemeProvider>
             </HashRouter>

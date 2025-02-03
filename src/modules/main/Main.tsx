@@ -6,7 +6,7 @@ import { Skills } from "./Skills/Skills";
 import { Footer } from "./Footer/Footer";
 import { MainHeader } from "./Header/MainHeader";
 
-function Main() {
+export function Main() {
     return (
         <React.Fragment>
             <MainHeader></MainHeader>
@@ -18,5 +18,3 @@ function Main() {
         </React.Fragment>
     );
 }
-
-export default Main;
