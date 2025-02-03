@@ -32,7 +32,7 @@ export function Home() {
                         </Box>
                         <Typography variant="body1" textAlign={"left"}>
                             I'm a fourth year computer science student attending the University of Cincinnati. I made this website
-                            as a portfolio to showcase some of the cool things I've worked on.
+                            as a portfolio to showcase what I've worked on.
                         </Typography>
                         <Stack direction={"row"} spacing={1}>
                             <IconButton color="primary" href="https://github.com/Clicky02" target="_blank">

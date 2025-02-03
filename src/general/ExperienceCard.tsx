@@ -23,8 +23,9 @@ class ExperienceCard extends React.Component<Props> {
                 ) : (
                     ""
                 )}
-                <CardContent sx={{ textAlign: "left", flexGrow: 1 }}>
+                <CardContent sx={{ display: "flex", flexDirection: "column", textAlign: "left", flexGrow: 1 }}>
                     {this.props.children}
+                    {/* <Box flexGrow={1} /> */}
                     <Stack direction={"row"} flexWrap={"wrap"} spacing={1} useFlexGap>
                         {this.props.skills.map((value, i) => (
                             <SkillChip key={i} label={value} />

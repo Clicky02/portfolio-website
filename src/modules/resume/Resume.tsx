@@ -1,10 +1,11 @@
-import { Box, Container, CssBaseline, FormControlLabel, Stack, Switch, ThemeProvider, Typography } from "@mui/material";
+import { Box, Container, CssBaseline, FormControlLabel, Stack, Switch, ThemeProvider, Tooltip, Typography } from "@mui/material";
 import { resumeTheme } from "./Theme";
 import { ResumeRenderer } from "./Renderer";
 import { Block, Category, DateRange, DocType, ListEntry, Resume, Val } from "./components";
 import { activity, award, education, project, work } from "./creationUtils";
 import { useEffect, useState } from "react";
 import "./Resume.css";
+import { Warning } from "@mui/icons-material";
 
 const resume: Resume = {
     name: "Gareth Fultz",
@@ -203,10 +204,24 @@ export function ResumePage() {
                         <Typography variant="h3" textAlign={"center"}>
                             Resume Renderer
                         </Typography>
-                        <FormControlLabel
-                            control={<Switch value={full} onChange={(_evt, val) => setFull(val)} />}
-                            label="Full Resume"
-                        />
+                        <Stack direction={"row"} alignItems={"center"} gap={1}>
+                            <FormControlLabel
+                                control={<Switch value={full} onChange={(_evt, val) => setFull(val)} />}
+                                label="Full Resume"
+                            />
+                            <Tooltip
+                                arrow
+                                color="green"
+                                title={
+                                    <Typography>
+                                        The full resume includes information from previous versions of my resume. Much of it is no
+                                        longer relevant, and its contents may be out of date.
+                                    </Typography>
+                                }
+                            >
+                                <Warning color="warning" />
+                            </Tooltip>
+                        </Stack>
                     </Stack>
                 </Box>
                 <ResumeRenderer resume={resume} docType={full ? DocType.Full : DocType.Short} />

@@ -9,33 +9,11 @@ const SkillCard = (props: any) => (
     />
 );
 
-const skills: string[] = [
-    "C++",
-    "C#",
-    "Java",
-    "JavaScript",
-    "Typescript",
-    "Python",
-    "Rust",
-    "Unity",
-    "Unreal",
-    "XR/3D Development",
-    "Web Development",
-    "Git",
-    "HTML",
-    "CSS",
-    "React",
-    "Vue.js",
-    "Material UI",
-    "Docker",
-    "Algorithms",
-    "Data Structures",
-    "Networking",
-    "Oculus SDK",
-    "MySQL",
-];
+interface SkillsProps {
+    skills: string[];
+}
 
-export function Skills() {
+export function Skills({ skills }: SkillsProps) {
     return (
         <SectionBox id={"skills"}>
             <Container maxWidth={"xl"}>

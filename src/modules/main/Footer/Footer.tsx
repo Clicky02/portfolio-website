@@ -2,23 +2,23 @@ import { Box, Container, IconButton, Link, Stack, Typography } from "@mui/materi
 import Grid from "@mui/material/Grid2";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import SectionBox from "general/SectionBox";
 import { useIsSmaller } from "general/BreakpointWrapper";
 
 export function Footer() {
     const isSmall = useIsSmaller("md");
 
     return (
-        <SectionBox
-            id={"skills"}
+        <Box
             sx={{
                 borderTop: "solid 1px #d0d7de",
                 borderImage:
                     "linear-gradient( 90deg, rgba(255, 255, 255, 1) 0%, rgba(208, 215, 222, 1) 14%, rgba(208, 215, 222, 1) 86%, rgba(255, 255, 255, 1) 100%) 1 1",
             }}
-            mt={5}
-            pt={4}
-            pb={2}
+            mt={3}
+            pt={3}
+            pb={3}
+            display={"flex"}
+            alignItems={"center"}
         >
             <Stack direction={"column"} width="100%">
                 <Container maxWidth={"md"}>
@@ -46,10 +46,10 @@ export function Footer() {
                     </Grid>
                 </Container>
 
-                <Box mt={4}>
+                <Box mt={2}>
                     <Typography variant="body2">Created by Gareth Fultz © 2025</Typography>
                 </Box>
             </Stack>
-        </SectionBox>
+        </Box>
     );
 }
