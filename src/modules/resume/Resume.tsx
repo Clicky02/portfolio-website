@@ -55,13 +55,13 @@ const resume: Resume = {
         Category("Skills", [
             Block(undefined, undefined, [
                 ListEntry("Programming Languages", [
+                    Val("C++"),
                     Val("C#"),
                     Val("Rust"),
+                    Val("Java"),
+                    Val("Python"),
                     Val("TypeScript"),
                     Val("JavaScript"),
-                    Val("Python"),
-                    Val("Java"),
-                    Val("C++"),
                 ]),
                 ListEntry("Programming Skills", [
                     Val("Virtual Server Management"),
@@ -96,10 +96,10 @@ const resume: Resume = {
         Category("Work Experience", [
             work("SRC", "Software-Engineer Co-op", DateRange(new Date(2024, 0), new Date(2024, 7)), [
                 Val(
-                    "Developed an application for demonstrating and debugging arbitrary algorithms and algorithm chains, utilizing React and Quart (a Flask-like web server library for Python)."
+                    "Developed an application for visualizing and debugging arbitrary algorithm chains, utilizing React and Flask."
                 ),
                 Val(
-                    "Designed and built a Rust library for reading and writing a file type which supports multiple data sizes and formats."
+                    "Designed and developed a Rust library for reading and writing a file type which supports multiple data sizes and formats."
                 ),
                 Val("Delivered the technical solution to various operational groups for production use."),
             ]),
@@ -123,8 +123,7 @@ const resume: Resume = {
                         "Developed features involving model analysis, multidimensional data visualization, and using real time sensor data to visualize objects in a virtual setting."
                     ),
                     Val(
-                        "Wrote an add-on application allowing users to load a 3D object and deconstruct it in a virtual environment.",
-                        DocType.Full
+                        "Wrote an add-on application allowing users to load a 3D object and deconstruct it in a virtual environment."
                     ),
                     Val("Diagnosed and fixed issues in a large open-source library using debugging tools."),
                 ]
@@ -132,31 +131,29 @@ const resume: Resume = {
         ]),
         Category("Projects", [
             project("Masters Capstone Project", DateRange(new Date(2025, 0), new Date(2025, 3)), [
-                Val("Designing a custom programming language and compiler in Rust, targeting LLVM for multi-platform support."),
+                Val("Designed a custom programming language and compiler in Rust, targeting LLVM for multi-platform support."),
             ]),
             project("Senior Design Project", DateRange(new Date(2024, 7), new Date(2025, 3)), [
-                Val(
-                    "Collaborating to develop an application for creating and training PyTorch neural networks with a node-based interface."
-                ),
+                Val("Developed an application for creating and training PyTorch neural networks with a node-based interface."),
             ]),
             project("Portfolio Website", DateRange(new Date(2023, 5), new Date(2023, 6)), [
-                Val("Used React and Material UI to create a website for showcasing technical skills and experience."),
+                Val("Created a website using React and Material UI for showcasing technical skills and experience."),
+            ]),
+            project("VR Game Development", DateRange(new Date(2021, 6), new Date(2022, 7)), [
+                Val(
+                    "Utilized Unreal Engine and C++ programming to design and create a Virtual Reality game for Oculus headsets."
+                ),
             ]),
             project(
-                "VR Game Development",
-                DateRange(new Date(2021, 6), new Date(2022, 7)),
+                "Honors Modeling II Project",
+                DateRange(new Date(2021, 0), new Date(2021, 3)),
                 [
                     Val(
-                        "Utilized Unreal Engine and C++ programming to design and create a Virtual Reality game for Oculus headsets."
+                        "Collaborated to create a python program to analyze multiple companies’ logos using computer vision libraries."
                     ),
                 ],
                 DocType.Full
             ),
-            project("Honors Modeling II Project", DateRange(new Date(2021, 0), new Date(2021, 3)), [
-                Val(
-                    "Collaborated to create a python program to analyze multiple companies’ logos using computer vision libraries."
-                ),
-            ]),
         ]),
 
         Category("Activities", [
