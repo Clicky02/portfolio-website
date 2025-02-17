@@ -55,13 +55,13 @@ const resume: Resume = {
         Category("Skills", [
             Block(undefined, undefined, [
                 ListEntry("Programming Languages", [
-                    Val("C++"),
-                    Val("C#"),
-                    Val("Rust"),
                     Val("Java"),
+                    Val("Rust"),
+                    Val("C#"),
                     Val("Python"),
                     Val("TypeScript"),
                     Val("JavaScript"),
+                    Val("C++"),
                 ]),
                 ListEntry("Programming Skills", [
                     Val("Virtual Server Management"),
