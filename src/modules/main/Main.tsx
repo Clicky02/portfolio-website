@@ -101,7 +101,7 @@ const projects: Project[] = [
                     language aims to be simple-to-use, vaguely similar to Python, but compiled instead of interpreted. The 
                     compiler will target LLVM to allow for optimization and multi-platform use.`,
         skills: ["Rust", "LLVM"],
-        links: [], // TODO: Add a GitHub Link
+        links: [{ href: "https://github.com/Clicky02/Reticulated", icon: <GitHubIcon /> }],
     },
 ];
 
