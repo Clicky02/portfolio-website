@@ -4,7 +4,7 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { useIsSmaller } from "general/BreakpointWrapper";
-import ResumePDF from "./assets/Fultz_Gareth_Resume_Fall2024.pdf";
+import ResumePDF from "./assets/FultzGarethResumeSpring2025.pdf";
 
 export function Home() {
     const isSmall = useIsSmaller("sm");
